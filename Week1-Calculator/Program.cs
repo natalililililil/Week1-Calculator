@@ -16,8 +16,6 @@ while (isRunning)
 
         Console.Write("Введите второе число: ");
         double secondNum = InputValidator.ReadNumber(Console.ReadLine());
-        if (operation == "/" && secondNum == 0)
-            throw new DivideByZeroException("Деление на ноль запрещено");
 
         var calculator = new Calculator();
 

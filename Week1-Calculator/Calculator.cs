@@ -11,7 +11,7 @@ namespace Week1_Calculator
                 "+" => firstNum + secondNum,
                 "-" => firstNum - secondNum,
                 "*" => firstNum * secondNum,
-                "/" => firstNum / secondNum,
+                "/" => secondNum == 0 ? throw new DivideByZeroException("Деление на ноль запрещено") : firstNum / secondNum
             };
 
             return result;
